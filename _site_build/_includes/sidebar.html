@@ -1,0 +1,29 @@
+<aside>
+  <nav id="site-navigation">
+    <h2>Links</h2>
+    <ul>
+      <li><a href="/" rel="home" target="_self" title="{{ site.title }}">Home</a></li>
+      <li><a href="/about.html" rel="author" target="_self" title="About {{ site.author }}">About</a></li>
+    </ul>
+  </nav>
+  <aside id="social">
+    <h2>Contact</h2>
+    <ul>
+      {% if site.email %}
+      <li>
+        <a href="mailto:{{ site.email }}" rel="author" target="_blank" title="Email {{site.author }}"><span>Email</span>{{ site.email }}</a>
+      </li>
+      {% endif %}
+      {% if site.twitter %}
+      <li>
+        <a href="http://twitter.com/#!/{{ site.twitter }}" rel="external nofollow" target="_blank" title="Follow {{ site.author }} on Twitter"><span>Twitter</span>@{{ site.twitter }}</a>
+      </li>
+      {% endif %}
+      {% if site.github %}
+      <li>
+        <a href="https://github.com/{{ site.github }}" rel="external nofollow" target="_blank" title="Follow {{ site.author }} on GitHub"><span>Github</span>{{ site.github }}</a>
+      </li>
+      {% endif %}
+    </ul>
+  </aside>
+</aside>

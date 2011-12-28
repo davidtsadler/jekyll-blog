@@ -1,0 +1,28 @@
+# ***************************
+# SITE CONFIG
+# ***************************
+
+title:
+subtitle:
+author:
+email:
+twitter:
+github:
+
+
+
+# ***************************
+# JEKYLL CONFIG
+# ***************************
+
+# Markdown engine that will be used.
+markdown: rdiscount
+
+# Directory where Jekyll will look to transform files.
+source: _site_build
+
+# Directory where Jekyll will save transformed files.
+destination: public
+
+# Format that Jekyll will use when generating URLs to posts.
+permalink: /archives/:year/:month/:day/:title/

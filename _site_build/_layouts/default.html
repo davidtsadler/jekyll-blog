@@ -1,0 +1,31 @@
+<!doctype html>
+<!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js ie7 oldie" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js ie8 oldie" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+  {% include head.html %}
+</head>
+<body>
+  <div class="container">
+    <div id="header" class="row">
+      <div class="twelve columns">
+        {% include header.html %}
+      </div>
+    </div>
+    <div id="content" class="row">
+      <div class="eight columns">
+        {{ content }}
+      </div>
+      <div class="four columns">
+        {% include sidebar.html %}
+      </div>
+    </div>
+    <div id="footer" class="row">
+      <div class="twelve columns">
+        {% include footer.html %}
+      </div>
+    </div>
+  </div>
+</body>
+</html>

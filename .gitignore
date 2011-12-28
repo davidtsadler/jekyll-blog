@@ -1,0 +1,5 @@
+public
+_config.yml
+*.swp
+*~
+.DS_Store
