@@ -2,12 +2,22 @@
 # SITE CONFIG
 # ***************************
 
+# Appears in the <title> and <header> elements within the site.
 title:
-subtitle:
+# Optional. Appears in the site's main <header> element.
+#subtitle:
+# Used in various places where the author of the site needs to appear. 
+# For example, the copyright notice.
 author:
-email:
-twitter:
-github:
+
+# Optional information that appears in the 'Contact' sidebar.
+# Mainly used to generate URLs to various social sites.
+# email address of the site author.
+#email:
+# Twitter name minus the @ character. 
+#twitter:
+# Git hub name.
+#github:
 
 
 
