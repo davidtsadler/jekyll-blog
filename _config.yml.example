@@ -18,7 +18,8 @@ author:
 #twitter:
 # Git hub name.
 #github:
-
+# Controls the number of recent posts shown on the main index page.
+max_recent_posts: 10
 
 
 # ***************************
