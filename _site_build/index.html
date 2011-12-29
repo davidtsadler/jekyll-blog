@@ -2,24 +2,8 @@
 layout: default
 title: Home
 ---
-<h2>home</h2>
-<ul>
+<section id="excerpts">
 {% for post in site.posts %}
-  <li><a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></li>
+  {% include post_excerpt.html %}
 {% endfor %}
-</ul>
-<p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed aliquet rutrum leo sit amet convallis. Maecenas quis magna leo. Aenean at dolor a ante facilisis faucibus tincidunt ac quam. Duis eu lorem erat. Curabitur vel aliquam orci. Aliquam quis leo a purus sagittis interdum. Quisque varius, magna ac mattis fringilla, felis elit pharetra mauris, a consectetur nunc tortor ac mi. In hac habitasse platea dictumst. Pellentesque eu pulvinar libero. Proin nec ante non lectus mollis eleifend et tincidunt purus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Etiam ornare elementum cursus. Aenean quis sapien sem. Nunc orci ante, pellentesque eget tempus sit amet, sagittis at leo.
-</p>
-<p>
-Donec blandit mauris ut augue consequat in ullamcorper mi blandit. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nam nisl leo, viverra vitae scelerisque sit amet, gravida quis tortor. Integer tincidunt eros in lacus ornare imperdiet. Aliquam eget elementum justo. Suspendisse eu magna dolor. Sed id nulla felis. Sed sit amet nunc sed erat ullamcorper euismod bibendum in ante. Proin et erat id sapien malesuada aliquam id nec dui. Proin nec venenatis leo. Vestibulum accumsan consequat fringilla. Curabitur eu neque magna, nec pharetra leo.
-</p>
-<p>
-Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Sed vulputate est ut dui egestas convallis. Donec nisl dolor, volutpat eget fringilla id, adipiscing tincidunt sem. Donec facilisis molestie malesuada. Vivamus ante dolor, commodo non imperdiet in, rhoncus a urna. Donec fringilla est vitae libero egestas molestie. Aenean iaculis mauris at nisi interdum hendrerit. Aliquam quam erat, pretium nec imperdiet id, facilisis sed est. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Etiam eget neque tellus. Vestibulum faucibus nisl tristique mauris semper sollicitudin. Nunc neque magna, auctor et semper et, commodo eget odio. Aliquam auctor sapien nec nisl eleifend ut dignissim arcu rutrum. Integer luctus mauris sed nibh convallis sit amet adipiscing felis aliquet. Duis aliquet, metus ac malesuada tincidunt, magna diam porta felis, quis venenatis nunc neque vitae lorem.
-</p>
-<p>
-Suspendisse non felis massa. Morbi nulla odio, tempor vel convallis a, viverra eget purus. Morbi id sapien turpis, id placerat sapien. Mauris orci neque, congue sed rhoncus sit amet, placerat sit amet mi. Vivamus eu lectus eget risus facilisis egestas. Ut sed rhoncus velit. Phasellus tempor eros et tellus volutpat cursus. Cras posuere tortor quis urna aliquam porttitor. Praesent tellus felis, pellentesque eu aliquam sit amet, varius et risus. In hac habitasse platea dictumst. Pellentesque consectetur consectetur enim, quis accumsan dolor euismod in. Suspendisse aliquam congue mauris scelerisque auctor.
-</p>
-<p>
-Duis neque velit, sollicitudin at tempus et, interdum sit amet mauris. Nam at risus lacus, eu sollicitudin mauris. Sed egestas interdum ipsum, at pretium dui vehicula vel. Aenean quis mi arcu, ac pretium urna. Duis pellentesque rhoncus est, id viverra massa convallis ac. Maecenas commodo lorem facilisis est fermentum vitae pretium felis varius. Suspendisse in tortor felis. Curabitur eu porttitor arcu. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nam leo tellus, pulvinar non laoreet sed, condimentum sit amet elit.
-</p>
+</section>

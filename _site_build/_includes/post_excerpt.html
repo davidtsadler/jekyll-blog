@@ -1,0 +1,8 @@
+<article class="excerpt">
+  <header>
+    <h1>{{ post.title }}</h1>
+    <time datetime="{{ post.date | date: '%Y-%m-%d' }}" pubdate>{{ post.date | date: '%A, %d %B, %Y' }}</time>
+  </header>
+  {{ post.content | text_excerpt }}
+  <a href="{{ post.url }}" title="{{ post.title }}">Click to continue reading &raquo;</a></li>
+</article>

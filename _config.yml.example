@@ -36,3 +36,13 @@ destination: public
 
 # Format that Jekyll will use when generating URLs to posts.
 permalink: /archives/:year/:month/:day/:title/
+
+# ***************************
+# PLUGINS CONFIG
+# ***************************
+
+# Directory where plugins are located.
+plugins: _site_build/_plugins
+
+# For the ExceprtFilter plugin. The cutline in posts that indicate the end of the excerpt.
+excerpt_tag: '<!--more-->'
