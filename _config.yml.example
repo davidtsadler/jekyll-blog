@@ -4,23 +4,31 @@
 
 # Appears in the <title> and <header> elements within the site.
 title:
+
 # Optional. Appears in the site's main <header> element.
 #subtitle:
+
 # Used in various places where the author of the site needs to appear. 
 # For example, the copyright notice.
 author:
 
 # Optional information that appears in the 'Contact' sidebar.
 # Mainly used to generate URLs to various social sites.
+
 # email address of the site author.
 #email:
+
 # Twitter name minus the @ character. 
 #twitter:
+
 # Git hub name.
 #github:
+
 # Controls the number of recent posts shown on the main index page.
 max_recent_posts: 10
 
+# Optional Google analytics.
+#google_ua:
 
 # ***************************
 # JEKYLL CONFIG

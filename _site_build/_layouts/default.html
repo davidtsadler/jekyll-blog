@@ -28,4 +28,7 @@
     </div>
   </div>
 </body>
+{% if site.google_ua %}
+  {% include google_analytics.html %}
+{% endif %}
 </html>
