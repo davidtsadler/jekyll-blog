@@ -10,7 +10,7 @@ end
 
 desc 'Runs the server.'
 task :server => [:clean] do
-  system 'jekyll --server --auto'
+  system 'bundle exec jekyll --server --auto'
 end
 
 desc 'Creates several test posts.'
