@@ -4,3 +4,4 @@ source "http://gemcutter.org"
 gem 'jekyll'
 gem 'rdiscount'
 gem 'rake'
+gem 'sanitize'

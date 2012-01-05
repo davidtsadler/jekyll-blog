@@ -1,8 +1,7 @@
 <article class="excerpt">
   <header>
-    <h1>{{ post.title }}</h1>
+    <h1><a href="{{ post.url }}" target="_self" title="{{ post.title }}">{{ post.title }}</a></h1>
     <time datetime="{{ post.date | date: '%Y-%m-%d' }}" pubdate>{{ post.date | date: '%A' }} {{ post.date | ordinalize }} {{ post.date | date: '%B, %Y' }}</time>
   </header>
-  {{ post.content | text_excerpt }}
-  <a href="{{ post.url }}" target="_self" title="{{ post.title }}">Click to continue reading &raquo;</a>
+  {{ post.content | truncate }}
 </article>
