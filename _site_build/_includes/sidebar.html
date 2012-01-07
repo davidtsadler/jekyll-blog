@@ -20,6 +20,11 @@
         <a href="http://twitter.com/#!/{{ site.twitter }}" rel="external nofollow" target="_blank" title="Follow {{ site.author }} on Twitter"><span>Twitter</span>@{{ site.twitter }}</a>
       </li>
       {% endif %}
+      {% if site.facebook %}
+      <li>
+        <a href="https://www.facebook.com/{{ site.facebook }}" rel="external nofollow" target="_blank" title="Follow {{ site.author }} on Facebook"><span>Facebook</span>{{ site.facebook }}</a>
+      </li>
+      {% endif %}
       {% if site.github %}
       <li>
         <a href="https://github.com/{{ site.github }}" rel="external nofollow" target="_blank" title="Follow {{ site.author }} on GitHub"><span>Github</span>{{ site.github }}</a>
