@@ -19,7 +19,7 @@ robots: follow, noindex, noodp, noydir
       {% endif %}
     {% endunless %}
     <li>
-      <time datetime="{{ post.date | date: '%Y-%m-%d' }}" pubdate>{{ post.date | date: '%b' }} {{ post.date | ordinalize }}</time> <a href="{{ post.url }}" target="_self" title="{{ post.title }}">{{ post.title }}</a>
+      <time datetime="{{ post.date | date: '%Y-%m-%d' }}" pubdate>{{ post.date | date: '%b' }} {{ post.date | ordinalize }}</time> <a href="{{ post.url }}" rel="bookmark" target="_self" title="{{ post.title }}">{{ post.title }}</a>
     </li>
   {% endfor %}
   </ol>
