@@ -62,6 +62,3 @@ permalink: /archives/:year/:month/:day/:title/
 
 # Directory where plugins are located.
 plugins: _site_build/_plugins
-
-# For the ExceprtFilter plugin. The cutline in posts that indicate the end of the excerpt.
-excerpt_tag: '<!--more-->'
