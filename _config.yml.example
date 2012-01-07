@@ -43,6 +43,9 @@ copyright_year:
 # Optional Google analytics.
 #google_ua:
 
+# Optional Feedburner ID.
+#feedburner:
+
 # ***************************
 # JEKYLL CONFIG
 # ***************************
