@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Page not found
-robots: follow, noindex, noodp, noydir
+robots: follow, noindex, noodp, noydir, noarchive
 ---
 # Page not found
 Sorry, but the page you were trying to view does not exist.
