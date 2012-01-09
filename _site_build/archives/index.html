@@ -16,7 +16,7 @@ robots: follow, noindex, noodp, noydir, noarchive
     <ol>
     {% endif %}
     <li>
-      <a href="{{ post.url }}" target="_self" title="{{ post.title }}">{{ post.title }}</a>
+      <a href="{{ post.url }}" rel="bookmark" target="_self" title="{{ post.title }}">{{ post.title }}</a>
     </li>
     {% capture year %}{{ post.date | date: '%Y' }}{% endcapture %}
     {% capture pyear %}{{ post.previous.date | date: '%Y' }}{% endcapture %}
