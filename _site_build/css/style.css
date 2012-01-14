@@ -159,8 +159,12 @@ h1, h2, h3, h4, h5, h6 {
   padding: 0;
 }
 
-article h1, section#about h1, section#archives h1 {
+article h1, section#about  h1, section#archives h1, section#category > h1 {
   font-size: 1.461538462em; /* 19 / 13 */
+}
+
+section#about h1, section#archives h1, section#category > h1 {
+  margin-bottom: 1em;
 }
 
 article h2, section#about h2, section#archives h2 {
@@ -206,16 +210,20 @@ article h2, section#about h2, section#archives h2 {
   text-transform: lowercase;
 }
 
-li.prev-article a, li.next-article a {
+article.excerpt {
+  margin-bottom: 2em;
+}
+
+article li.prev-article a, article li.next-article a {
   display: block;
 }
 
-li.prev-article {
+article li.prev-article {
   float: left;
   width: 50%;
 }
 
-li.next-article {
+article li.next-article {
   float: right;
   text-align: right;
   width: 50%;
@@ -230,23 +238,9 @@ article footer nav ul:after {
   visibility: hidden;
 }
 
-article.excerpt {
-  margin-bottom: 2em;
-}
-
-section#archives h1 {
-  margin-bottom: 1em;
-}
-
 section#archives ol {
   list-style-type: disc;
 }
-
-section#archives time {
-  display: inline-block;
-  width: 4em;
-}
-
 
 /* ==|== non-semantic helper classes ======================================== */
 .ir { display: block; border: 0; text-indent: -999em; overflow: hidden; background-color: transparent; background-repeat: no-repeat; text-align: left; direction: ltr; }

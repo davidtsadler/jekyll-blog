@@ -68,3 +68,15 @@ permalink: /archives/:year/:month/:day/:title/
 
 # Directory where plugins are located.
 plugins: _site_build/_plugins
+
+# Set to true to have Jekyll generate category pages for posts.
+#generate_category_indexes: true
+
+# The directory where categories will be served from. Defaults to categories
+#category_dir:
+
+# String prefixed to the title of the category page. Defaults to Category: 
+#category_title_prefix:
+
+# String prefixed to the meta description of the category page. Defaults to Category:
+#category_meta_description_prefix:

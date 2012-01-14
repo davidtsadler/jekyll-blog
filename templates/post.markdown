@@ -3,6 +3,7 @@ layout: post
 title: :title
 author: 
 description:
+categories: [Rails Plugins, Javascript, Ruby]
 ---
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce et tellus ac sem vestibulum tristique ac at magna. Proin eros ipsum, egestas sit amet rutrum non, fringilla ut tellus. Sed facilisis rhoncus libero ornare interdum. Morbi a dui id quam dignissim mollis at sit amet purus. Ut pretium malesuada dolor, eu luctus lorem bibendum id. Mauris cursus cursus est sit amet lobortis. Quisque sit amet dui quis sapien fringilla tempus et convallis lectus. Integer pretium tristique sollicitudin. Fusce at ante et tellus vulputate congue. Aliquam nec ligula est. Vestibulum aliquet scelerisque neque, ut elementum neque mattis id. Sed non mauris quam. Vivamus id augue felis. Etiam eleifend, erat sit amet tempor tempor, nibh neque tristique lorem, pretium adipiscing nulla lorem sit amet lacus. Vestibulum odio mauris, hendrerit non dictum sit amet, consequat in mi. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nulla est nulla, pulvinar eget volutpat quis, placerat nec metus. Vivamus tristique elit ac lectus vestibulum bibendum. Phasellus ac diam purus, cursus imperdiet lorem. Sed a nulla nec velit placerat tempus.
 

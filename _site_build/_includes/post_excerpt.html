@@ -2,6 +2,9 @@
   <header>
     <h1><a href="{{ post.url }}" rel="bookmark" target="_self" title="{{ post.title }}">{{ post.title }}</a></h1>
     <time datetime="{{ post.date | date: '%Y-%m-%d' }}" pubdate>{{ post.date | date: '%A' }} {{ post.date | ordinalize }} {{ post.date | date: '%B, %Y' }}</time>
+    {% if post.categories.size != 0 %}
+    <div class="categories">Posted in {{ post.categories | category_links }}</div>
+    {% endif %}
   </header>
   {{ post.content | truncate }}
 </article>
