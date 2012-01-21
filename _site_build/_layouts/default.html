@@ -27,7 +27,7 @@
       </div>
     </div>
   </div>
-{% if site.google_ua %}
+{% if site.production and site.google_ua %}
   {% include google_analytics.html %}
 {% endif %}
 </body>

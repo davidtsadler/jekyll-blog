@@ -2,6 +2,10 @@
 # SITE CONFIG
 # ***************************
 
+# Set to true when building the site for production.
+# Some parts of the site are only built in production mode. E.g. Google analytics code.
+production: false
+
 # Full url for the site minus the ending forward slash. 
 url:
 
