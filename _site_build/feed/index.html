@@ -2,7 +2,7 @@
 layout: nil
 ---
 <?xml version="1.0" encoding="UTF-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
   <channel>
     <title>{{ site.title }}</title>
     <link>{{ site.url }}</link>
@@ -12,6 +12,8 @@ layout: nil
     {% if site.email %}
     <managingEditor>{{ site.email }} ({{ site.author }})</managingEditor>
     <webMaster>{{ site.email }} ({{ site.author }})</webMaster>
+    {% else %}
+    <dc:creator>{{ site.author }}</dc:creator>
     {% endif %}
     <pubDate>{{ site.time | date: "%a, %d %b %Y %H:%M:%S %z"}}</pubDate>
     <lastBuildDate>{{ site.time | date: "%a, %d %b %Y %H:%M:%S %z" }}</lastBuildDate>
@@ -24,6 +26,8 @@ layout: nil
       <pubDate>{{ post.date | date: "%a, %d %b %Y %H:%M:%S %z" }}</pubDate>
       {% if site.email %}
       <author>{{ site.email }} ({{ site.author }})</author>
+      {% else %}
+      <dc:creator>{{ site.author }}</dc:creator>
       {% endif %}
       <description>{{ post.content | text_excerpt | xml_escape }}</description>
       {% for category in post.categories %}
