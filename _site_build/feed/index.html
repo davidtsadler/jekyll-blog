@@ -26,6 +26,9 @@ layout: nil
       <author>{{ site.email }} ({{ site.author }})</author>
       {% endif %}
       <description>{{ post.content | text_excerpt | xml_escape }}</description>
+      {% for category in post.categories %}
+      <category>{{ category }}</category>
+      {% endfor %}
     </item>
     {% endfor %}
   </channel>
