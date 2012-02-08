@@ -1,4 +1,6 @@
+$:.unshift(File.dirname(__FILE__))
 require 'yaml'
+require 'lib/random'
 
 task :default => [:'site:deploy:development']
 
@@ -41,12 +43,12 @@ namespace :site do
   end
 end
 
-namespace :posts do
+namespace :test_posts do
   desc 'Creates several test posts.'
   task :create => [:clean, :create_directory] do
-    year = Time.now.year
-    (1..20).each do |day|
-      save_post(Time.new(year, 1, day), "Dummy post #{day}")
+    (1..@config['num_test_posts']).each do |day|
+      date, title, category = TestPosts::Random.generate
+      save_post(date, title, "Testing", "A test post", category, true)
     end
   end
 
@@ -57,15 +59,21 @@ namespace :posts do
 
   desc 'Creates the required posts directory if one does not exist.'
   task :create_directory => [:load_config] do
-    Dir.mkdir(@config['posts']) unless File.directory?(@config['posts'])
+    dir = @config['posts'] + '/test'
+    FileUtils.mkdir_p(dir) unless File.directory?(dir)
   end
 
 private
-  def save_post(date, title)
+  def save_post(date, title, author, description, categories, test = false)
     template = File.read("templates/post.markdown")
     template.gsub!(/:title/, title)
+    template.gsub!(/:author/, author)
+    template.gsub!(/:description/, description)
+    template.gsub!(/:categories/, categories)
 
-    filename = "#{@config['source']}/_posts/#{date.strftime('%Y-%m-%d')}-#{parameterize(title)}.markdown"
+    filename = "#{@config['source']}/_posts"
+    filename << '/test' if test
+    filename << "/#{date.strftime('%Y-%m-%d')}-#{parameterize(title)}.markdown"
     File.open(filename, 'w') { |f| f.write(template) }
   end
     
