@@ -20,7 +20,7 @@ namespace :site do
     end
 
     desc 'Builds the site so that it can be deployed.'
-    task :production => [:clean] do
+    task :production => [:'test_posts:clean', :clean] do
       system 'bundle exec jekyll'
     end
   end
@@ -54,7 +54,7 @@ namespace :test_posts do
 
   desc 'Deletes any test posts.'
   task :clean  => [:load_config] do
-    FileUtils.rm_rf(@config['posts'])
+    FileUtils.rm_rf(@config['posts'] + '/test')
   end
 
   desc 'Creates the required posts directory if one does not exist.'
@@ -65,7 +65,7 @@ namespace :test_posts do
 
 private
   def save_post(date, title, author, description, categories, test = false)
-    template = File.read("templates/post.markdown")
+    template = File.read("lib/templates/post.markdown")
     template.gsub!(/:title/, title)
     template.gsub!(/:author/, author)
     template.gsub!(/:description/, description)
