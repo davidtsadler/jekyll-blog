@@ -48,7 +48,7 @@ namespace :test_posts do
   task :create => [:clean, :create_directory] do
     (1..@config['num_test_posts']).each do |day|
       date, title, category = TestPosts::Random.generate
-      save_post(date, title, "Testing", "A test post", category, true)
+      save_post(date, title, "Testing", "A test post", "[\"#{category}\"]", true)
     end
   end
 
