@@ -25,7 +25,7 @@ module TestPosts
     def self.date
       jdFrom = Date.today.prev_year.jd
       jdTo = Date.today.jd
-      Date.jd(rand((jdTo + 1) - jdFrom) + jdFrom)
+      Date.jd(rand((jdTo + 1) - jdFrom) + jdFrom).strftime('%Y-%m-%d')
     end
   end
 end
