@@ -50,6 +50,9 @@ copyright_year:
 # Optional Feedburner ID.
 #feedburner:
 
+# Optional Disqus integration.
+#disqus_shortname:
+
 # ***************************
 # JEKYLL
 # ***************************

@@ -1,0 +1,6 @@
+<script type="text/javascript">
+    var disqus_shortname='{{ site.disqus_shortname }}',disqus_identifier='{{ page.url }}',disqus_url='{{ site.url}}{{ page.url }}',disqus_title='{{ page.title }}'{% unless site.production %},disqus_developer=1{% endunless %};
+    (function(d,t){var q=d.createElement(t),s=d.getElementsByTagName(t)[0];
+    q.src='//{{ site.disqus_shortname }}.disqus.com/embed.js';
+    s.parentNode.insertBefore(q,s);}(document,'script'));
+</script>

@@ -30,5 +30,8 @@
 {% if site.production and site.google_ua %}
   {% include google_analytics.html %}
 {% endif %}
+{% if page.comments and site.disqus_shortname %}
+  {% include disqus.html %}
+{% endif %}
 </body>
 </html>
