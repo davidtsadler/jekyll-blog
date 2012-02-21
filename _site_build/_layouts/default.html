@@ -30,7 +30,7 @@
 {% if site.production and site.google_ua %}
   {% include google_analytics.html %}
 {% endif %}
-{% if page.comments and site.disqus_shortname %}
+{% if (page.comments or page.show_comment_counts) and site.disqus_shortname %}
   {% include disqus.html %}
 {% endif %}
 </body>

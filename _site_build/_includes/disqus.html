@@ -1,6 +1,10 @@
 <script type="text/javascript">
     var disqus_shortname='{{ site.disqus_shortname }}',disqus_identifier='{{ page.url }}',disqus_url='{{ site.url}}{{ page.url }}',disqus_title='{{ page.title | replace: "'", "\\'" }}'{% unless site.production %},disqus_developer=1{% endunless %};
-    (function(d,t){var q=d.createElement(t),s=d.getElementsByTagName(t)[0];
-    q.src='//{{ site.disqus_shortname }}.disqus.com/embed.js';
-    s.parentNode.insertBefore(q,s);}(document,'script'));
+    (function(d,t){
+      function i(u){var q=d.createElement(t),s=d.getElementsByTagName(t)[0];q.src=u;s.parentNode.insertBefore(q,s);}
+      {% if page.comments %}
+      i('//{{ site.disqus_shortname }}.disqus.com/embed.js');
+      {% endif %}
+      i('//{{ site.disqus_shortname }}.disqus.com/count.js');
+    }(document,'script'));
 </script>

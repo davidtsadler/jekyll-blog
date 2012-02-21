@@ -214,7 +214,7 @@ section#archives h2 {
   text-transform: lowercase;
 }
 
-article header time, article .categories {
+article header time, article .categories, article .comment-count {
   color: #999999;
 }
 
