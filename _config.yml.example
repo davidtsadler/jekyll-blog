@@ -69,6 +69,10 @@ destination: public
 # Format that Jekyll will use when generating URLs to posts.
 permalink: /archives/:year/:month/:day/:title/
 
+# Enable if you want syntax highlighting.
+# Will require you to install pygments onto your system.
+#pygments: true
+
 # ***************************
 # PLUGINS 
 # ***************************

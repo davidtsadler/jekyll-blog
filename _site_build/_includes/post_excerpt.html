@@ -6,7 +6,7 @@
     <span class="categories"> | Posted in {{ post.categories | category_links }}</span>
     {% endif %}
     {% if post.comments and site.disqus_shortname %}
-    <span class="comment-count"> | <a href="{{ page.url }}#disqus_thread" data-disqus-identifier="{{ page.url }}">Comments</a></span>
+    <span class="comment-count"> | <a href="{{ post.url }}#disqus_thread" data-disqus-identifier="{{ post.url }}">Comments</a></span>
     {% endif %}
   </header>
   {{ post.content | truncate }}

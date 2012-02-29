@@ -4,8 +4,8 @@
 <meta name="description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
 <meta name="copyright" content="Copyright &copy; {{ site.copyright_year }} by {% if page.author %}{{ page.author }}{% else %}{{ site.author }}{% endif %}. All Rights Reserved.">
 {% if page.robots %}<meta name="robots" content="{{ page.robots }}">{% endif %}
-<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="viewport" content="width=device-width">
 <link rel="canonical" href="{{ site.url}}{{ page.url | chomp_url }}">
 <link rel="stylesheet" href="/css/style.css?v=1">
 <link rel="alternate" type="application/rss+xml" href="{% if site.feedburner %}http://feeds.feedburner.com/{{ site.feedburner }}{% else %}/feed/{% endif %}" title="Feed for {{ site.title }}">
-<script src="/js/modernizr-2.0.6.min.js"></script>
+<script src="js/modernizr-2.5.3.min.js"></script>
