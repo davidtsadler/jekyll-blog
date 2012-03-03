@@ -223,6 +223,19 @@ article header time, article .categories, article .comment-count {
   color: #999999;
 }
 
+article header .social {
+  margin-top: 0.5em;
+}
+
+article .google-plus, article .twitter-share, article .fb-like {
+  font-size: 1px;
+  display: inline;
+}
+
+article div .fb_reset {
+    display: inline;
+} 
+
 article .categories a {
   font-style: italic
 }
@@ -244,6 +257,10 @@ article li.next-article {
   float: right;
   text-align: right;
   width: 50%;
+}
+
+article footer nav {
+  margin-top: 1em;
 }
 
 article footer nav ul:after {

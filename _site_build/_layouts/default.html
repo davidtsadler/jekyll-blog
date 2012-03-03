@@ -28,10 +28,19 @@
     </div>
   </div>
 {% if site.production and site.google_ua %}
-  {% include google_analytics.html %}
+  {% include javascript/google_analytics.html %}
+{% endif %}
+{% if page.google_plus %}
+  {% include javascript/google_plus.html %}
+{% endif %}
+{% if page.twitter_share %}
+  {% include javascript/twitter.html %}
+{% endif %}
+{% if page.facebook_like %}
+  {% include javascript/facebook.html %}
 {% endif %}
 {% if (page.comments or page.show_comment_counts) and site.disqus_shortname %}
-  {% include disqus.html %}
+  {% include javascript/disqus.html %}
 {% endif %}
 </body>
 </html>
