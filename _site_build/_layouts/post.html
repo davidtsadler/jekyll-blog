@@ -11,22 +11,14 @@ layout: default
     {% if page.comments and site.disqus_shortname %}
     <span class="comment-count"> | <a href="{{ page.url }}#disqus_thread" data-disqus-identifier="{{ page.url }}">Comments</a></span>
     {% endif %}
-    {% if page.social %}
-    <div class="social">
-      {% if page.google_plus %}{% include social/google_plus.html %}{% endif %}
-      {% if page.twitter_share %}{% include social/twitter_share.html %}{% endif %}
-      {% if page.facebook_like %}{% include social/facebook_like.html %}{% endif %}
-    </div>
+    {% if site.social_buttons %}
+      {% include social/buttons.html %}
     {% endif %}
   </header>
   {{ content }}
   <footer>
-    {% if page.social %}
-    <div class="social">
-      {% if page.google_plus %}{% include social/google_plus.html %}{% endif %}
-      {% if page.twitter_share %}{% include social/twitter_share.html %}{% endif %}
-      {% if page.facebook_like %}{% include social/facebook_like.html %}{% endif %}
-    </div>
+    {% if site.social_buttons %}
+      {% include social/buttons.html %}
     {% endif %}
     <nav>
       <ul>

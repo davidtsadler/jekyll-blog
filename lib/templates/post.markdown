@@ -6,7 +6,6 @@ description: :description
 categories: :categories
 robots: follow, noodp, noydir, noarchive
 comments: true
-social: true
 google_plus: true
 twitter_share: true
 facebook_like: true

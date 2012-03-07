@@ -53,6 +53,10 @@ copyright_year:
 # Optional Disqus integration.
 #disqus_shortname:
 
+# Social buttons will be enabled for posts.
+# Each post can control what buttons they want through their meta tags. 
+social_buttons: true
+
 # ***************************
 # JEKYLL
 # ***************************
