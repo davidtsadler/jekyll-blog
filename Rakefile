@@ -9,8 +9,16 @@ namespace :site do
     desc 'Builds the site and deploys it locally using the built in server.'
     task :development => [:'env:development', :'build:development']
 
-    desc 'Builds the site and deploys it to a remote server.'
-    task :production => [:'env:production', :'build:production']
+    desc 'Builds the site and deploys it to a remote server using rsync over ssh.'
+    task :production => [:'env:production', :'build:production'] do
+      config = @config['deployment'] || {}
+      host = config['host'] || ask('Host?', nil, lambda { |answer| !answer.empty? }, 'You must enter a host')
+      user = config['user'] || ask('User?', nil, lambda { |answer| !answer.empty? }, 'You must enter a user')
+      port = config['port'] || ask('Port?', '22', lambda { |answer| !answer.empty? }, 'You must enter a port number')
+      dir = config['directory'] || ask('Directory?', nil, lambda { |answer| !answer.empty? }, 'You must enter a directory')
+      
+      system("rsync -avz --delete --rsh='ssh -p#{port}' #{@config['destination']}/ #{user}@#{host}:#{dir}")
+    end
   end
 
   namespace :build do
