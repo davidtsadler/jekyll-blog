@@ -12,6 +12,8 @@ namespace :site do
     desc 'Builds the site and deploys it to a remote server using rsync over ssh.'
     task :production => [:'env:production', :'build:production'] do
       config = @config['deployment'] || {}
+      config.merge! YAML::load_file('_deploy.yml')['deployment']if File.exists?('_deploy.yml')
+
       host = config['host'] || ask('Host?', nil, lambda { |answer| !answer.empty? }, 'You must enter a host')
       user = config['user'] || ask('User?', nil, lambda { |answer| !answer.empty? }, 'You must enter a user')
       port = config['port'] || ask('Port?', '22', lambda { |answer| !answer.empty? }, 'You must enter a port number')
