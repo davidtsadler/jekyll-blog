@@ -375,7 +375,7 @@ section#archives ol {
 
 /* ==|== pygments styles ======================================================= */
 
-.highlight pre { padding: 0.5em; }
+.highlight pre { padding: 0.5em; white-space: pre; overflow: auto }
 .highlight .hll { background-color: #ffffcc }
 .highlight  { background: #f8f8f8; }
 .highlight .c { color: #408080; font-style: italic } /* Comment */
