@@ -29,7 +29,7 @@ layout: nil
       {% else %}
       <dc:creator>{{ site.author }}</dc:creator>
       {% endif %}
-      <description>{{ post.content | text_excerpt | xml_escape }}</description>
+      <description>{{ post.content | truncate | xml_escape }}</description>
       {% for category in post.categories %}
       <category>{{ category }}</category>
       {% endfor %}
