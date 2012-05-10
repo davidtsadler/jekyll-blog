@@ -5,7 +5,7 @@
       <li><a href="/" rel="home" target="_self" title="{{ site.title }}">Home</a></li>
       <li><a href="/archives/" target="_self" title="Archives">Archives</a></li>
       <li><a href="/about/" rel="author" target="_self" title="About {{ site.author }}">About</a></li>
-      <li><a href="{% if site.feedburner %}http://feeds.feedburner.com/{{ site.feedburner }}{% else %}/feed/{% endif %}" target="_self" title="Feed for {{ site.title }}">RSS</a></li>
+      <li><a href="{% if site.production and site.feedburner %}http://feeds.feedburner.com/{{ site.feedburner }}{% else %}/feed/{% endif %}" target="_self" title="Feed for {{ site.title }}">RSS</a></li>
     </ul>
   </nav>
   <aside id="social">
