@@ -16,6 +16,11 @@
         <a href="mailto:{{ site.email }}" rel="author" target="_blank" title="Email {{site.author }}"><span>Email</span>{{ site.email }}</a>
       </li>
       {% endif %}
+      {% if site.google_plus_id %}
+      <li>
+        <a href="https://plus.google.com/{{ site.google_plus_id }}" rel="external nofollow author" target="_blank" title="Follow {{ site.author }} on Google+"><span>Google+</span>{{ site.author }}</a>
+      </li>
+      {% endif %}
       {% if site.twitter %}
       <li>
         <a href="http://twitter.com/#!/{{ site.twitter }}" rel="external nofollow" target="_blank" title="Follow {{ site.author }} on Twitter"><span>Twitter</span>@{{ site.twitter }}</a>

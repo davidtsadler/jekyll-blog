@@ -36,7 +36,10 @@ description:
 #github:
 
 # Facebook username
-#facebook
+#facebook:
+
+# Google plus profile ID
+#google_plus_id:
 
 # Controls the number of recent posts shown on the main index page and in the RSS feed.
 max_recent_posts: 10
