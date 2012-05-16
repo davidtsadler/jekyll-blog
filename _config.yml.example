@@ -47,6 +47,9 @@ copyright_year:
 # Optional Google analytics.
 #google_ua:
 
+# Optional Google site verification.
+#google_site_verification: 
+
 # Optional Feedburner ID.
 #feedburner:
 
